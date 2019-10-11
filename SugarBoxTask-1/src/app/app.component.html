@@ -1,0 +1,13 @@
+<div class="container">
+  <form [formGroup]="demoForm">
+    <div class="form-group">
+      <label class="label">Input: </label>
+      <input type="input" class="form-control" formControlName="input">
+    </div>
+  </form>
+
+  <div class="result-section">
+    <div class="label inline-blocks">Output: </div>
+    <div class="inline-blocks">{{outputString | numberToWord}}</div>
+  </div>
+</div>
